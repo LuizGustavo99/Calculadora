@@ -35,7 +35,7 @@ namespace Calculadora_3._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            float num1, num2, resultado;
+            float num1, num2, resultado, teste;
 
             num1 = float.Parse(textBox1.Text);
             num2 = float.Parse(textBox2.Text);
