@@ -13,24 +13,18 @@ namespace Calculadora_3._0
 {
     public partial class Form2 : Form
     {
-
-        Thread novaThread;
-
+                
         public Form2()
         {
             InitializeComponent();
         }
 
+        Thread novaThread;
+        Class1 Objeto = new Class1();
+
         private void button1_Click(object sender, EventArgs e)
-        {
-            float num1, num2, resultado;
-
-            num1 = float.Parse(textBox1.Text);
-            num2 = float.Parse(textBox2.Text);
-
-            resultado = num1 + num2;
-
-            label4.Text = Convert.ToString(resultado);
+        {            
+            label4.Text = Convert.ToString(Objeto.Somar(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,5 +74,7 @@ namespace Calculadora_3._0
         {
             Application.Run(new Form1());
         }
-    }
+
+        
+    }    
 }
