@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Calculadora_3._0
 {
-    class Class1
+    class Multiplica
     {
-        public float resultado;
-        public float Somar(float num1, float num2)
-        {
-            this.resultado = num1 + num2;
 
-            return this.resultado;
+        public float Multiplicacao(float a, float b)
+        {
+            float resultado = a * b;
+
+            return resultado;
         }
 
     }

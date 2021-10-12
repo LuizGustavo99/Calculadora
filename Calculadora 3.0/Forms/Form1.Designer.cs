@@ -35,11 +35,12 @@ namespace Calculadora_3._0
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(149, 278);
+            this.button1.Location = new System.Drawing.Point(143, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -72,7 +73,7 @@ namespace Calculadora_3._0
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(116, 145);
+            this.radioButton2.Location = new System.Drawing.Point(110, 145);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(135, 19);
             this.radioButton2.TabIndex = 6;
@@ -82,7 +83,7 @@ namespace Calculadora_3._0
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(149, 249);
+            this.button2.Location = new System.Drawing.Point(143, 249);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -100,12 +101,25 @@ namespace Calculadora_3._0
             this.label2.TabIndex = 8;
             this.label2.Text = "Bem vindo(a) à Calculadora 3.0";
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AllowDrop = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(47, 170);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(280, 19);
+            this.radioButton3.TabIndex = 9;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Formula de Heron (Calculo de área de triangulo)";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(359, 313);
+            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton2);
@@ -130,6 +144,7 @@ namespace Calculadora_3._0
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
 

@@ -20,7 +20,11 @@ namespace Calculadora_3._0
         }
 
         Thread novaThread;
-        Class1 Objeto = new Class1();
+        Soma Objeto = new();
+        Subtrai Objeto2 = new();
+        Multiplica Objeto3 = new();
+        Divide Objeto4 = new();
+        
 
         private void button1_Click(object sender, EventArgs e)
         {            
@@ -29,38 +33,18 @@ namespace Calculadora_3._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            float num1, num2, resultado;
-
-            num1 = float.Parse(textBox1.Text);
-            num2 = float.Parse(textBox2.Text);
-
-            resultado = num1 - num2;
-
-            label4.Text = Convert.ToString(resultado);
+            
+            label4.Text = Convert.ToString(Objeto2.Subtracao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            float num1, num2, resultado;
-
-            num1 = float.Parse(textBox1.Text);
-            num2 = float.Parse(textBox2.Text);
-
-            resultado = num1 * num2;
-
-            label4.Text = Convert.ToString(resultado);
+            label4.Text = Convert.ToString(Objeto3.Multiplicacao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            float num1, num2, resultado;
-
-            num1 = float.Parse(textBox1.Text);
-            num2 = float.Parse(textBox2.Text);
-
-            resultado = num1 / num2;
-
-            label4.Text = Convert.ToString(resultado);
+            label4.Text = Convert.ToString(Objeto4.Divisao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -42,7 +42,14 @@ namespace Calculadora_3._0
                 novaThread = new Thread(tela3);
                 novaThread.SetApartmentState(ApartmentState.STA);
                 novaThread.Start();
-            }                                  
+            }
+            else if (radioButton3.Checked == true)
+            {
+                this.Close();
+                novaThread = new Thread(tela4);
+                novaThread.SetApartmentState(ApartmentState.STA);
+                novaThread.Start();
+            }
             else
             {
                 MessageBox.Show("Selecione uma opção!");
@@ -61,6 +68,10 @@ namespace Calculadora_3._0
             Application.Run(new Form3());
         }
 
-
+      
+        private void tela4(object obj)
+        {
+            Application.Run(new Form4());
+        }
     }
 }
