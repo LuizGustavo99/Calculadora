@@ -9,7 +9,7 @@ namespace Calculadora_3._0
     class Subtrai
     {
 
-        public float Subtracao(float a, float b)
+        public static float Subtracao(float a, float b)
         {
             float resultado = a - b;
 

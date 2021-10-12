@@ -4,18 +4,12 @@ namespace Calculadora_3._0
 {
     class FormulaHeron
     {
-        public double A;
-        public double B;
-        public double C;
-
-        public double Resultado;
-
-        public double Heron(double A, double B, double C)
+        public static double Heron(double A = 0, double B = 0, double C = 0)
         {
 
             double p = (A + B + C) / 2.0;
 
-            Resultado = Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+            double Resultado = Math.Sqrt(p * (p - A) * (p - B) * (p - C));
 
             return Resultado;
 

@@ -8,7 +8,7 @@ namespace Calculadora_3._0
 {
     class Divide
     {
-        public float Divisao(float a, float b)
+        public static float Divisao(float a, float b)
         {
             float resultado = a / b;
 

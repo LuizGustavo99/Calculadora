@@ -15,7 +15,6 @@ namespace Calculadora_3._0
     {
 
         Thread novaThread;
-        FormulaBhaskara Objeto = new();
 
         public Form3()
         {
@@ -24,7 +23,7 @@ namespace Calculadora_3._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label5.Text = Convert.ToString(Objeto.Bhaskara(float.Parse(textBox1.Text), float.Parse(textBox2.Text), float.Parse(textBox3.Text)).ToString("F2"));
+            label5.Text = Convert.ToString(FormulaBhaskara.Bhaskara(float.Parse(textBox1.Text), float.Parse(textBox2.Text), float.Parse(textBox3.Text)).ToString("F2"));
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -8,7 +8,7 @@ namespace Calculadora_3._0
 {
     class FormulaBhaskara
     {
-        public float Bhaskara(float a, float b, float c)
+        public static float Bhaskara(float a, float b, float c)
         {
             float delta;
             float resultado;

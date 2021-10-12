@@ -3,11 +3,11 @@
     class Soma
     {
         public float resultado;
-        public float Somar(float num1, float num2)
+        public static float Somar(float num1, float num2)
         {
-            this.resultado = num1 + num2;
+            float resultado = num1 + num2;
 
-            return this.resultado;
+            return resultado;
         }
 
     }
