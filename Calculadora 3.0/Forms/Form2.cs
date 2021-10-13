@@ -51,7 +51,7 @@ namespace Calculadora_3._0
             float num1 = float.Parse(textBox1.Text);
             float num2 = float.Parse(textBox2.Text);
 
-            label4.Text = Convert.ToString(OperacoesBasicas.Divisao(num1, num2));
+            label4.Text = Convert.ToString(OperacoesBasicas.Divisao(num1, num2).ToString("F2"));
         }
 
         private void button5_Click(object sender, EventArgs e)
