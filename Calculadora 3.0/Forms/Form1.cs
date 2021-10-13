@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 
@@ -54,8 +47,7 @@ namespace Calculadora_3._0
             {
                 MessageBox.Show("Selecione uma opção!");
             }
-            
-                
+                                        
         }
 
         private void tela2(object obj)
@@ -67,8 +59,7 @@ namespace Calculadora_3._0
         {
             Application.Run(new Form3());
         }
-
-      
+              
         private void tela4(object obj)
         {
             Application.Run(new Form4());
