@@ -23,24 +23,35 @@ namespace Calculadora_3._0
         
 
         private void button1_Click(object sender, EventArgs e)
-        {            
-            label4.Text = Convert.ToString(Soma.Somar(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
+        {
+            float num1 = float.Parse(textBox1.Text);
+            float num2 = float.Parse(textBox2.Text);
+
+            label4.Text = Convert.ToString(OperacoesBasicas.Soma(num1, num2));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            label4.Text = Convert.ToString(Subtrai.Subtracao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
+            float num1 = float.Parse(textBox1.Text);
+            float num2 = float.Parse(textBox2.Text);
+
+            label4.Text = Convert.ToString(OperacoesBasicas.Subtracao(num1, num2));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label4.Text = Convert.ToString(Multiplica.Multiplicacao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
+            float num1 = float.Parse(textBox1.Text);
+            float num2 = float.Parse(textBox2.Text);
+
+            label4.Text = Convert.ToString(OperacoesBasicas.Multiplicacao(num1, num2));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label4.Text = Convert.ToString(Divide.Divisao(float.Parse(textBox1.Text), float.Parse(textBox2.Text)));
+            float num1 = float.Parse(textBox1.Text);
+            float num2 = float.Parse(textBox2.Text);
+
+            label4.Text = Convert.ToString(OperacoesBasicas.Divisao(num1, num2));
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -23,7 +23,11 @@ namespace Calculadora_3._0
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label5.Text = Convert.ToString(FormulaBhaskara.Bhaskara(float.Parse(textBox1.Text), float.Parse(textBox2.Text), float.Parse(textBox3.Text)).ToString("F2"));
+            float num1 = float.Parse(textBox1.Text);
+            float num2 = float.Parse(textBox2.Text);
+            float num3 = float.Parse(textBox3.Text);
+
+            label5.Text = Convert.ToString(FormulaBhaskara.Bhaskara(num1, num2, num3).ToString("F2"));
         }
 
         private void button1_Click(object sender, EventArgs e)

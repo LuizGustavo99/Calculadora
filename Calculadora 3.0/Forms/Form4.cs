@@ -15,26 +15,34 @@ namespace Calculadora_3._0
         Thread novaThread;
 
         private void button1_Click(object sender, EventArgs e)
-        {                               
+        {
+            double num1x = double.Parse(textBox1.Text);
+            double num2x = double.Parse(textBox2.Text);
+            double num3x = double.Parse(textBox3.Text);
+
+            double num1y = double.Parse(textBox4.Text);
+            double num2y = double.Parse(textBox5.Text);
+            double num3y = double.Parse(textBox6.Text);
+
 
             //Area X
 
-            label5.Text = Convert.ToString(FormulaHeron.Heron(double.Parse(textBox1.Text), double.Parse(textBox2.Text), double.Parse(textBox3.Text)).ToString("F4"));
+            label5.Text = Convert.ToString(FormulaHeron.Heron(num1x, num2x, num3x).ToString("F4"));
 
 
             // Area Y
 
-            label6.Text = Convert.ToString(FormulaHeron.Heron(double.Parse(textBox4.Text), double.Parse(textBox5.Text), double.Parse(textBox6.Text)).ToString("F4"));
+            label6.Text = Convert.ToString(FormulaHeron.Heron(num1y, num2y, num3y).ToString("F4"));
 
 
 
-            if (FormulaHeron.Heron(double.Parse(textBox1.Text), double.Parse(textBox2.Text), double.Parse(textBox3.Text)) > FormulaHeron.Heron(double.Parse(textBox4.Text), double.Parse(textBox5.Text), double.Parse(textBox6.Text)))
+            if (FormulaHeron.Heron(num1x, num2x, num3x) > FormulaHeron.Heron(num1y, num2y, num3y))
             {
-                label8.Text = Convert.ToString(FormulaHeron.Heron(double.Parse(textBox1.Text), double.Parse(textBox2.Text), double.Parse(textBox3.Text)).ToString("F4"));
+                label8.Text = Convert.ToString(FormulaHeron.Heron(num1x, num2x, num3x).ToString("F4"));
             }
-            else if(FormulaHeron.Heron(double.Parse(textBox1.Text), double.Parse(textBox2.Text), double.Parse(textBox3.Text)) < FormulaHeron.Heron(double.Parse(textBox4.Text), double.Parse(textBox5.Text), double.Parse(textBox6.Text)))
+            else if(FormulaHeron.Heron(num1x, num2x, num3x) < FormulaHeron.Heron(num1y, num2y, num3y))
             {
-                label8.Text = Convert.ToString(FormulaHeron.Heron(double.Parse(textBox4.Text), double.Parse(textBox5.Text), double.Parse(textBox6.Text)).ToString("F4"));
+                label8.Text = Convert.ToString(FormulaHeron.Heron(num1y, num2y, num3y).ToString("F4"));
             }
             else
             {
