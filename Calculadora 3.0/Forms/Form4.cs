@@ -13,7 +13,6 @@ namespace Calculadora_3._0
         }
 
         Thread novaThread;
-        FormulaHeron FH = new();
 
         private void button1_Click(object sender, EventArgs e)
         {                               

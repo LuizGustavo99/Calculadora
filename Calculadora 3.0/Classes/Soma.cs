@@ -2,7 +2,6 @@
 {
     class Soma
     {
-        public float resultado;
         public static float Somar(float num1, float num2)
         {
             float resultado = num1 + num2;
