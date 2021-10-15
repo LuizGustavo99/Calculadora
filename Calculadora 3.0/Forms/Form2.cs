@@ -13,14 +13,14 @@ namespace Calculadora_3._0
 {
     public partial class Form2 : Form
     {
-                
+
         public Form2()
         {
             InitializeComponent();
         }
 
         Thread novaThread;
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -66,6 +66,6 @@ namespace Calculadora_3._0
             Application.Run(new Form1());
         }
 
-        
-    }    
+
+    }
 }

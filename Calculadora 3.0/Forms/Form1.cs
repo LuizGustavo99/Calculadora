@@ -26,21 +26,21 @@ namespace Calculadora_3._0
             {
                 this.Close();
                 novaThread = new Thread(tela2);
-                novaThread.SetApartmentState(ApartmentState.STA);
+                novaThread.SetApartmentState(ApartmentState.MTA);
                 novaThread.Start();
             }
             else if (radioButton2.Checked == true)
             {
                 this.Close();
                 novaThread = new Thread(tela3);
-                novaThread.SetApartmentState(ApartmentState.STA);
+                novaThread.SetApartmentState(ApartmentState.MTA);
                 novaThread.Start();
             }
             else if (radioButton3.Checked == true)
             {
                 this.Close();
                 novaThread = new Thread(tela4);
-                novaThread.SetApartmentState(ApartmentState.STA);
+                novaThread.SetApartmentState(ApartmentState.MTA);
                 novaThread.Start();
             }
             else
