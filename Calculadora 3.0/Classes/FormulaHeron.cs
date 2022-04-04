@@ -4,7 +4,7 @@ namespace Calculadora_3._0
 {
     class FormulaHeron
     {
-        public static double Heron(double A = 0, double B = 0, double C = 0)
+        public static double Heron(double A, double B, double C)
         {
 
             double p = (A + B + C) / 2.0;
